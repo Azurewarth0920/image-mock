@@ -9,7 +9,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "image-mock": "^0.0.3"
+    "image-mock": "^0.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

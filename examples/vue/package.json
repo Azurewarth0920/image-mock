@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "vue": "^3.2.37",
-    "image-mock": "^0.0.3"
+    "image-mock": "^0.0.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
