@@ -1,6 +1,6 @@
 # Image Mock
 
-The image mocker for local web developing compatible with client and server side.
+The image mocker for mocking image response for web development, compatible with client and server side.
 
 ## Installation
 
@@ -50,9 +50,9 @@ const { server: imageMock } = require('image-mock')
 const app = express()
 
 const imageMock = imageMock({
-      width: 100
-      height: 100
-    })
+  width: 100
+  height: 100
+})
 
 app.get('/base64', (_, res) => {
   res.send(imageMock.toBase64())
@@ -91,41 +91,34 @@ The background color of the image mock.
 ### text
 
 - Type: string
-- Default: `#000000`
-
-The background color of the image mock.
-
-### text
-
-- Type: string
 - Default: `''`
 
-The text will be rendered the image mock.
+The text that will be rendered on the image mock.
 
 ### font
 
 - Type: string
 - Default: `'Roboto'`
 
-The font of the text will be rendered the image mock.
+The font of the text that will be rendered on the image mock.
 
 ### fontSize
 
 - Type: number
 - Default: `20`
 
-The font size of the text will be rendered the image mock.
+The font size of the text that will be rendered on the image mock.
 
 ### color
 
 - Type: string
 - Default: `'#fff'`
 
-The color of the text will be rendered the image mock.
+The color of the text that will be rendered on the image mock.
 
 ### imageType
 
-- Type: `'png' | 'jpeg'` on Node.js
+- Type: `'png' | 'jpeg'` on server
 - Type: `'png' | 'jpeg' | 'webp'` on client
 - Default: `'png'`
 

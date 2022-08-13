@@ -2,13 +2,33 @@
   "name": "image-mock",
   "version": "0.0.1",
   "description": "Express example for mock-image",
-  "main": "dis/index.js",
+  "main": "dist/index.js",
   "common": "dist/index.js",
   "author": "Pei.Fan",
   "license": "MIT",
+  "keywords": [
+    "mock",
+    "image",
+    "browser",
+    "server"
+  ],
+  "directories": {
+    "dist": "dist/"
+  },
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+        "require": "./dist/index.js",
+        "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "dev": "nodemon",
-    "build": "tsc -p tsconfig.build.json"
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "rm -rf dist && yarn build"
   },
   "dependencies": {
     "canvas": "^2.9.3"
