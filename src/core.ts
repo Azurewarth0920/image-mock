@@ -6,7 +6,7 @@ const defaultArgs = {
   backgroundColor: '#000000',
   text: '',
   font: 'Roboto',
-  fontSize: 14,
+  fontSize: 20,
   color: '#fff',
   imageType: 'png',
 } as const
@@ -68,6 +68,7 @@ const write = (
     borderRadius,
   } = normalizedArgs
 
+  // Fill image
   const { tl, tr, bl, br } = borderRadius
   ctx.fillStyle = backgroundColor
   ctx.beginPath()
@@ -82,6 +83,13 @@ const write = (
   ctx.quadraticCurveTo(0, 0, tl, 0)
   ctx.closePath()
   ctx.fill()
+
+  // Fill text
+  ctx.font = `${fontSize}px ${font}`
+  ctx.fillStyle = color
+  ctx.textAlign = 'center'
+  ctx.textBaseline = 'middle'
+  ctx.fillText(text, width / 2, height / 2)
 }
 
 export const server = (args: Args) => {
