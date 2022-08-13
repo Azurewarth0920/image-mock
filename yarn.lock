@@ -1209,10 +1209,10 @@ ignore-by-default@^1.0.1:
   resolved "https://registry.yarnpkg.com/ignore-by-default/-/ignore-by-default-1.0.1.tgz#48ca6d72f6c6a3af00a9ad4ae6876be3889e2b09"
   integrity sha512-Ius2VYcGNk7T90CppJqcIkS5ooHUZyIQK+ClZfMfMNFEF9VSE73Fq+906u/CWu92x4gzZMWOwfFYckPObzdEbA==
 
-image-mock@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/image-mock/-/image-mock-0.0.2.tgz#1b3b0c2f51f02f4364f2df7e10f6ebb783852f51"
-  integrity sha512-+whW6AAsv6fZ8IHRtmxF/dge3ivkqx56nxOTus4dwiXyB7DR/tSNDjGXebz0Dp8PSVznQAN4q3GqRmC2G5U0eA==
+image-mock@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/image-mock/-/image-mock-0.0.3.tgz#a8f4f141f42fb2f16e74377f3ade207747540ad5"
+  integrity sha512-GH6r25BEfvDBk/UVwpmimGKa7A/pd9ZUHcc7AO7+K8bFj3+Lr5vwfyYxga1Y/qD3jB4fyDKjgUyajih3cTEZPA==
   dependencies:
     canvas "^2.9.3"
 

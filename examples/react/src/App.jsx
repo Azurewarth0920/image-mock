@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { client } from 'image-mock'
 
 function App() {
@@ -9,10 +10,15 @@ function App() {
     text: 'png',
     imageType: 'png',
   }).toBase64()
-  const jpegString = client({
+
+  const [jpegString, setJpegString] = useState('')
+
+  client({
     text: 'jpeg',
     imageType: 'jpeg',
-  }).toBase64()
+  })
+    .toUrl()
+    .then(url => setJpegString(url))
 
   return (
     <div>

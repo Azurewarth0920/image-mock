@@ -15,7 +15,11 @@ const jpegString = ref('')
 client({
   text: 'jpeg',
   imageType: 'jpeg',
-}).toUrl()
+})
+  .toUrl()
+  .then(url => {
+    jpegString.value = url
+  })
 </script>
 
 <template>
