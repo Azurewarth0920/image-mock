@@ -1,5 +1,5 @@
 {
-  "watch": ["lib", "dev"],   
-  "ext": "ts",   
-  "exec": "ts-node ./dev/index.ts"  
+  "watch": ["lib", "dev"],
+  "ext": "ts",
+  "exec": "ts-node ./dev/index.ts"
 }

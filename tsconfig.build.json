@@ -2,9 +2,9 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "declarationDir": "dist/types",
-    "declaration": true,    
-    "declarationMap": true, 
-    "sourceMap": true, 
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true
   },
-  "exclude": ["dev", "example"],
+  "exclude": ["dev", "example"]
 }

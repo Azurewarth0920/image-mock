@@ -36,7 +36,9 @@ const imageMock = imageMock({
 })
 
 imageMock.toBase64() // -> data:image/png;base64,iVBORw0KGgoA
-imageMock.toUrl() // -> localhost:xxxx/mock-url
+
+// As canvas.toBlob is an asynchronous function, a promise with url will be returned.
+await imageMock.toUrl() // -> blob:localhost:xxxx/mock-url
 ```
 
 ### Server
