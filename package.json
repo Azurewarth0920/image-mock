@@ -1,7 +1,7 @@
 {
   "name": "image-mock",
-  "version": "0.0.1",
-  "description": "Express example for mock-image",
+  "version": "0.0.2",
+  "description": "The image mocker for mocking image response for web development, compatible with client and server side.",
   "main": "dist/index.js",
   "common": "dist/index.js",
   "author": "Pei.Fan",
