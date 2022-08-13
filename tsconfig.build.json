@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "declarationDir": "dist/type",
+    "declarationDir": "dist/types",
     "declaration": true,    
     "declarationMap": true, 
     "sourceMap": true, 
