@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-const { server: mockImage } = require('../../../dist/index.js')
+const { server: mockImage } = require('image-mock')
 const app = express()
 const port = 3000
 

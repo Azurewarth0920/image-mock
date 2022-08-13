@@ -65,6 +65,14 @@ app.get('/image', (_, res) => {
 })
 ```
 
+## Quick start
+
+You can refer the examples for having a quick setup for project
+
+- ### [Express](https://github.com/Azurewarth0920/image-mock/tree/main/examples/express)
+- ### [React](https://github.com/Azurewarth0920/image-mock/tree/main/examples/react)
+- ### [Vue](https://github.com/Azurewarth0920/image-mock/tree/main/examples/vue)
+
 ## Options
 
 ### width
