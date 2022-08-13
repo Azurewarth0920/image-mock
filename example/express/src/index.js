@@ -1,13 +1,13 @@
 const express = require('express')
 const path = require('path')
-const { server } = require('../../../dist/index.js')
+const { server: mockImage } = require('../../../dist/index.js')
 const app = express()
 const port = 3000
 
 app.use(express.static(path.join(__dirname, '../public')))
 app.get('/dummy-image', (req, res) => {
   res.send(
-    server({
+    mockImage({
       width: 200,
       height: 200,
       text: 'Buffer',
@@ -18,7 +18,7 @@ app.get('/dummy-image', (req, res) => {
 
 app.get('/dummy-image/base64', (req, res) => {
   res.send(
-    server({
+    mockImage({
       width: 200,
       height: 200,
       text: 'Base64',

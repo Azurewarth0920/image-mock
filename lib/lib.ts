@@ -3,7 +3,7 @@ import { createCanvas as CreateCanvas, CanvasRenderingContext2D } from 'canvas'
 const defaultArgs = {
   width: 100,
   height: 100,
-  backgroundColor: '#000000',
+  backgroundColor: '#000',
   text: '',
   font: 'Roboto',
   fontSize: 20,
@@ -138,7 +138,19 @@ export const client = (args: ClientArgs) => {
   if (!context) return
   write(context, normalizedArgs)
 
-  return canvas.toDataURL(`image/${args.imageType}`)
+  const imageType = `image/${args.imageType}`
+
+  return {
+    toBase64: () => canvas.toDataURL(imageType),
+    toUrl: () => {
+      let url = ''
+      canvas.toBlob(blob => {
+        if (!blob) return
+        url = URL.createObjectURL(blob)
+      })
+      return url
+    },
+  }
 }
 
 export default (args: Args) => {
@@ -146,5 +158,5 @@ export default (args: Args) => {
     return server(args).toBase64()
   }
 
-  return client(args)
+  return client(args)?.toBase64()
 }

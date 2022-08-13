@@ -1,5 +1,5 @@
 import express from 'express'
-import { server } from '../lib'
+import { server as mockImage } from '../lib'
 import path from 'path'
 
 const app = express()
@@ -8,7 +8,7 @@ const port = 3000
 app.use(express.static(path.resolve(__dirname, './public')))
 app.get('/dummy', (_, res) => {
   res.send(
-    server({
+    mockImage({
       width: 300,
       height: 300,
       color: '#000',
