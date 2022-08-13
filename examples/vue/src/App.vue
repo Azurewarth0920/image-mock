@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue'
 import { client } from 'image-mock'
 
 const webpString = client({
@@ -9,10 +10,12 @@ const pngString = client({
   text: 'png',
   imageType: 'png',
 }).toBase64()
-const jpegString = client({
+const jpegString = ref('')
+
+client({
   text: 'jpeg',
   imageType: 'jpeg',
-}).toBase64()
+}).toUrl()
 </script>
 
 <template>
@@ -27,7 +30,7 @@ const jpegString = client({
     </div>
     <div>
       <h2>jpeg</h2>
-      <img :src="jpegString" />
+      <img v-if="jpegString" :src="jpegString" />
     </div>
   </div>
 </template>

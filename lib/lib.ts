@@ -142,14 +142,13 @@ export const client = (args: ClientArgs) => {
 
   return {
     toBase64: () => canvas.toDataURL(imageType),
-    toUrl: async () => {
-      return await new Promise<string>((resolve, reject) => {
+    toUrl: () =>
+      new Promise<string>((resolve, reject) => {
         canvas.toBlob(blob => {
           if (!blob) return reject('Canvas is empty')
           resolve(URL.createObjectURL(blob))
         })
-      })
-    },
+      }),
   }
 }
 
