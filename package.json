@@ -2,7 +2,7 @@
   "name": "mock-image-express",
   "version": "0.0.1",
   "description": "Express example for mock-image",
-  "main": "src/index.ts",
+  "main": "lib/index.ts",
   "author": "Pei.Fan",
   "license": "MIT",
   "scripts": {

@@ -66,10 +66,16 @@ const write = (
     fontSize,
     color,
     borderRadius,
+    imageType,
   } = normalizedArgs
 
   // Fill image
   const { tl, tr, bl, br } = borderRadius
+
+  if (imageType === 'jpeg') {
+    ctx.fillStyle = '#fff'
+    ctx.fillRect(0, 0, width, height)
+  }
   ctx.fillStyle = backgroundColor
   ctx.beginPath()
   ctx.moveTo(0 + tl, 0)
