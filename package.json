@@ -1,0 +1,20 @@
+{
+  "name": "mock-image-express",
+  "version": "0.0.1",
+  "description": "Express example for mock-image",
+  "main": "src/index.ts",
+  "author": "Pei.Fan",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p ."
+  },
+  "dependencies": {
+    "canvas": "^2.9.3",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.1"
+  },
+  "repository": "git@github.com:Azurewarth0920/node-mock-image.git"
+}
