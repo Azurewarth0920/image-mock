@@ -20,18 +20,19 @@ type Args = {
   fontSize?: number
   color?: string
   borderRadius?: number | { tl?: number; tr?: number; br?: number; bl?: number }
-  imageType: 'png' | 'jpeg'
+  imageType?: 'png' | 'jpeg'
 }
 
-type NormalizedArgs = Omit<Required<Args>, 'borderRadius'> & {
+type NormalizedArgs = Omit<Required<Args>, 'borderRadius' | 'imageType'> & {
   borderRadius: { tl: number; tr: number; br: number; bl: number }
+  imageType?: 'png' | 'jpeg' | 'webp'
 }
 
-type ClientArgs = Args & {
-  imageType: 'png' | 'jpeg' | 'webp'
+type ClientArgs = Omit<Args, 'imageType'> & {
+  imageType?: 'png' | 'jpeg' | 'webp'
 }
 
-const normalizeArgs = (args: Args) => {
+const normalizeArgs = (args: Args | ClientArgs) => {
   const { borderRadius, ...rest } = args
 
   return {
