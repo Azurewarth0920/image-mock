@@ -134,8 +134,8 @@ export const client = (args: ClientArgs) => {
   const canvas = document.createElement('canvas')
   canvas.width = normalizedArgs.width
   canvas.height = normalizedArgs.height
-  const context = canvas.getContext('2d')
-  if (!context) return
+  const context = canvas.getContext('2d') as CanvasRenderingContext2D
+  if (!context) throw new Error('Failed to get canvas context')
   write(context, normalizedArgs)
 
   const imageType = `image/${args.imageType}`
