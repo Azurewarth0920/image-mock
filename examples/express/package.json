@@ -11,6 +11,6 @@
     "express": "^4.18.1"
   },
   "dependencies": {
-    "image-mock": "^0.0.4"
+    "image-mock": "^1.1.0"
   }
 }
