@@ -683,7 +683,7 @@ caniuse-lite@^1.0.30001587:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001612.tgz#d34248b4ec1f117b70b24ad9ee04c90e0b8a14ae"
   integrity sha512-lFgnZ07UhaCcsSZgWW0K5j4e69dK1u/ltrL9lTUiFOwNHs12S3UMIEYgBV0Z6C6hRDev7iRnMzzYmKabYdXF9g==
 
-canvas@^2.11.0, canvas@^2.9.3:
+canvas@^2.11.0:
   version "2.11.2"
   resolved "https://registry.yarnpkg.com/canvas/-/canvas-2.11.2.tgz#553d87b1e0228c7ac0fc72887c3adbac4abbd860"
   integrity sha512-ItanGBMrmRV7Py2Z+Xhs7cT+FNt5K0vPL4p9EZ/UX/Mu7hFbkxSjKF2KVtPwX7UYWp7dRKnrTvReflgrItJbdw==
@@ -1254,11 +1254,11 @@ ignore-by-default@^1.0.1:
   integrity sha512-Ius2VYcGNk7T90CppJqcIkS5ooHUZyIQK+ClZfMfMNFEF9VSE73Fq+906u/CWu92x4gzZMWOwfFYckPObzdEbA==
 
 image-mock@^1.1.0:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/image-mock/-/image-mock-0.0.4.tgz#947a63d702fd0bfd3668276e847d14014a8d2a91"
-  integrity sha512-wM5W41V2Xo2Ate/8ThM4G6avoiNMsFfkF9U0ZHxcZN+Xj3bD0ejC5KaIWFnZ7NihXY2cyds2pk3Ux3vOlRFtXg==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/image-mock/-/image-mock-1.1.0.tgz#885b30e7ec3febcd14dddc65aa5b9e9a3cc7c3a8"
+  integrity sha512-BwaR/KseE3bRibUiJ6ebne+rDhWC7faVxcejGKacJmyZlW2/UgYYqNZgVjILUp70oRG0r8VsZjP++hQMzTAVYg==
   dependencies:
-    canvas "^2.9.3"
+    canvas "^2.11.0"
 
 inflight@^1.0.4:
   version "1.0.6"
